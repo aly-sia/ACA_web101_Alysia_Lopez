@@ -1,9 +1,6 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(images/drew-beamer-723259-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
+    background-image: url(https://images.unsplash.com/photo-1530543787849-128d94430c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+}
 
 .grid {
     display: flex;
@@ -50,8 +47,64 @@ body {
     align-items: center;
 }
 
+.widget1 * html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font: 18px Helvetica;
+}
+
+.fullDiv {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden; 
+}
+
+#calul {
+  margin: 0;
+  padding: 0;
+}
+
+#calnumber {
+  float: left;
+  display: block;
+  width: 14.2857%;
+  text-align: center;
+  list-style-type: none;
+}
+
+#calnumber:nth-child(n+1):nth-child(-n+7) {
+  font-weight: 900;
+  color: #e67e22;
+}
+
+#calnumber:nth-child(n+39), li:nth-child(n+8):nth-child(-n+16) {
+  font-weight: 900;
+  color: rgba(0,0,0,.3);
+}
+
+#calnumber:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
+  border-radius: 5px;
+  background-color: #1abc9c;
+  color: #ecf0f1;
+}
+
+
+
 .widget3 * {
   box-sizing:border-box;
+}
+
+body {
+  background: #F6F6F6;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .calculator {
@@ -112,19 +165,21 @@ body {
 }
 
 /* Remove margins and padding from the list */
-ul {
+#myul {
   margin: 0;
   padding: 0;
 }
 
 /* Style the list items */
-ul li {
+#myul, #mytodo {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
   background: #eee;
   font-size: 18px;
+  color: #000000;
   transition: 0.2s;
+  
 
   /* make the list items unselectable */
   -webkit-user-select: none;
@@ -134,24 +189,24 @@ ul li {
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
+#myul, #mytodo:nth-child(odd) {
   background: #f9f9f9;
 }
 
 /* Darker background-color on hover */
-ul li:hover {
+#myul, #mytodo:hover {
   background: #ddd;
 }
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+#mytodo.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
 
 /* Add a "checked" mark when clicked on */
-ul li.checked::before {
+#mytodo.checked::before {
   content: '';
   position: absolute;
   border-color: #fff;
