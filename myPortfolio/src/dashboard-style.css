@@ -1,53 +1,56 @@
 body {
-    background-image: url(https://images.unsplash.com/photo-1530543787849-128d94430c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+  background-image: url(https://images.unsplash.com/photo-1530543787849-128d94430c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .grid {
-    display: flex;
+  display: flex;
 }
 
 .grid__col {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 20px;
 }
 
 .grid__col:first-child {
-    margin-left: 0;
+  margin-left: 20px;
 }
 
 .grid__col_span_2 {
-    flex: 2;
+  flex: 2;
 }
 
 .widget {
-    display: flex;
-    flex-direction: column;
-    flex: 1;    
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .widget + .widget {
-    margin-top: 20px;
+  margin-top: 40px;
 }
 
 .widget__title {
-    margin: 0 0 10px 20px;
+  margin: 0 0 10px 20px;
 }
 
 .widget__content {
-    display: flex;
-    flex: 1 250px;
-    padding: 15px 20px;
-    border-radius: 10px;
-    background-color: #efefef;
+  display: flex;
+  flex: 1 250px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #DCDCDC;
 }
 
 .widget__content_center {
-    align-items: center;
+  align-items: center;
 }
 
-.widget1 * html, body {
+.widget1 * html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -63,7 +66,7 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 #calul {
@@ -79,46 +82,49 @@ body {
   list-style-type: none;
 }
 
-#calnumber:nth-child(n+1):nth-child(-n+7) {
+#calnumber:nth-child(n + 1):nth-child(-n + 7) {
   font-weight: 900;
-  color: #e67e22;
+  color: #FF6347;
 }
 
-#calnumber:nth-child(n+39), li:nth-child(n+8):nth-child(-n+16) {
+#calnumber:nth-child(n + 39),
+li:nth-child(n + 8):nth-child(-n + 16) {
   font-weight: 900;
-  color: rgba(0,0,0,.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
-#calnumber:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
+#calnumber:hover:nth-child(n + 8):nth-child(-n + 38),
+li:nth-child(17) {
   border-radius: 5px;
   background-color: #1abc9c;
   color: #ecf0f1;
 }
 
+.widget2 * {
+    box-sizing: border-box;
+}
+
+.clock {
+    
+}
 
 
 .widget3 * {
-  box-sizing:border-box;
-}
-
-body {
-  background: #F6F6F6;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  box-sizing: border-box;
 }
 
 .calculator {
   max-width: 200px;
   margin: 0 auto;
-  border:2px solid #111;
-  border-radius:5px;
+  border: 2px solid #111;
+  border-radius: 5px;
 }
 
 .calculator input {
   background: none;
   border: none;
   box-shadow: none;
-  width:100%;
+  width: 100%;
   border-bottom: 2px solid #111;
   padding: 10px;
   text-align: right;
@@ -127,19 +133,19 @@ body {
 
 .calculator-buttons {
   padding: 10px;
-   /* grid stuff wil take place here*/
+  /* grid stuff wil take place here*/
   display: grid;
   /*grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);*/
   grid-template: repeat(5, 1fr) / repeat(4, 1fr);
-  grid-gap: 5px; 
+  grid-gap: 5px;
 }
 
 .calc-button {
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid #111;
   padding: 10px;
-  color: #EEE;
+  color: #eee;
   border-radius: 1px;
   font-size: 10px;
   cursor: pointer;
@@ -151,11 +157,11 @@ body {
 }
 
 .is-clear {
-  background: #3572D8
+  background: #FF6347;
 }
 
 .is-equals {
-  background: #28D060
+  background: #1abc9c;
 }
 
 .widget4 
@@ -171,7 +177,8 @@ body {
 }
 
 /* Style the list items */
-#myul, #mytodo {
+#myul,
+#mytodo {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
@@ -179,7 +186,6 @@ body {
   font-size: 18px;
   color: #000000;
   transition: 0.2s;
-  
 
   /* make the list items unselectable */
   -webkit-user-select: none;
@@ -189,12 +195,14 @@ body {
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
-#myul, #mytodo:nth-child(odd) {
+#myul,
+#mytodo:nth-child(odd) {
   background: #f9f9f9;
 }
 
 /* Darker background-color on hover */
-#myul, #mytodo:hover {
+#myul,
+#mytodo:hover {
   background: #ddd;
 }
 
@@ -207,7 +215,7 @@ body {
 
 /* Add a "checked" mark when clicked on */
 #mytodo.checked::before {
-  content: '';
+  content: "";
   position: absolute;
   border-color: #fff;
   border-style: solid;
@@ -228,13 +236,13 @@ body {
 }
 
 .close:hover {
-  background-color: #f44336;
+  background-color: #FF6347;
   color: white;
 }
 
 /* Style the header */
 .header {
-  background-color: #f44336;
+  background-color: #1abc9c;
   padding: 20px 30px;
   color: white;
   text-align: center;
