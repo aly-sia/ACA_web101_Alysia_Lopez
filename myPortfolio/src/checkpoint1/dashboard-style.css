@@ -165,18 +165,15 @@ li:nth-child(17) {
 }
 
 .widget4 
-/* Include the padding and border in an element's total width and height */
-* {
+{
   box-sizing: border-box;
 }
 
-/* Remove margins and padding from the list */
 #myul {
   margin: 0;
   padding: 0;
 }
 
-/* Style the list items */
 #myul,
 #mytodo {
   cursor: pointer;
@@ -187,33 +184,28 @@ li:nth-child(17) {
   color: #000000;
   transition: 0.2s;
 
-  /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
 #myul,
 #mytodo:nth-child(odd) {
   background: #f9f9f9;
 }
 
-/* Darker background-color on hover */
 #myul,
 #mytodo:hover {
   background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
 #mytodo.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
 #mytodo.checked::before {
   content: "";
   position: absolute;
@@ -227,7 +219,6 @@ li:nth-child(17) {
   width: 7px;
 }
 
-/* Style the close button */
 .close {
   position: absolute;
   right: 0;
@@ -240,7 +231,6 @@ li:nth-child(17) {
   color: white;
 }
 
-/* Style the header */
 .header {
   background-color: #1abc9c;
   padding: 20px 30px;
@@ -248,14 +238,12 @@ li:nth-child(17) {
   text-align: center;
 }
 
-/* Clear floats after the header */
 .header:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the input */
 input {
   margin: 0;
   border: none;
@@ -266,7 +254,6 @@ input {
   font-size: 16px;
 }
 
-/* Style the "Add" button */
 .addBtn {
   padding: 10px;
   width: 30%;
@@ -283,3 +270,51 @@ input {
 .addBtn:hover {
   background-color: #bbb;
 }
+
+/* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+    .grid {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+                "calendar"
+                "clockncalc"
+                "todo";
+        max-width: auto;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid__col .grid__col_span_2 {
+        grid-area: calendar;
+    }
+    .grid__col .clockcalc{
+        grid-area: clockncalc;
+    }
+    .grid__col .todo{
+        grid-area: todo;
+    }
+  }
