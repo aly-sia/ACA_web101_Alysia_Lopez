@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/src/styles/tickTackToe.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head><body>
+    <div class="text-center"id="box">
+      <header>
+        <h1>Play Tic Tac Toe</h1>
+      </header>
+      <ul id="gameBoard">
+        <li class="tic"id="0" onclick="place('0')"></li>
+        <li class="tic"id="1" onclick="place('1')"></li>
+        <li class="tic"id="2" onclick="place('2')"></li>
+        <li class="tic"id="3" onclick="place('3')"></li>
+        <li class="tic"id="4"onclick="place('4')"></li>
+        <li class="tic"id="5" onclick="place('5')"></li>
+        <li class="tic"id="6" onclick="place('6')"></li>
+        <li class="tic"id="7" onclick="place('7')"></li>
+        <li class="tic"id="8" onclick="place('8')"></li>
+      </ul>
+      <div class="clearfix"></div>
+    <footer>
+      <button id="reset">Reset</button>
+    </footer>
+    </div>
+    <script src="./javascript/tickTackToe.js"></script>
+    </body>

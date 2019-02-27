@@ -133,7 +133,7 @@ li:nth-child(17) {
 
 .calculator-buttons {
   padding: 10px;
-  /* grid stuff wil take place here*/
+  /* grid stuff here*/
   display: grid;
   /*grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);*/
@@ -269,28 +269,6 @@ input {
 
 .addBtn:hover {
   background-color: #bbb;
-}
-
-/* Extra Small and up (Portrait Phones) */
-
-/* Small and up (Landscape Phones) */
-@media (min-width: 576px) {
-
-}
-
-/* Medium and up (Tablets) */
-@media (min-width: 768px) {
-
-}
-
-/* Large and up (Desktops) */
-@media (min-width: 992px) {
-
-}
-
-/* Extra Large and up (Wide Screen Desktops) */
-@media (min-width: 1200px) {
-
 }
 
 @media (max-width: 900px) {
